@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suganya P | Governance-Aware GenAI Engineer</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+ <!-- ========================================= -->
+<!-- NAVIGATION BAR -->
+<!-- ========================================= -->
+    
+    <header class="navbar">
+
+        <div class="container navbar-inner">
+
+            <div class="logo-section">
+
+                <h2>Suganya P</h2>
+
+                <p>Governance-Aware GenAI Engineer</p>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#governance">Governance</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+<!-- ========================================= -->
+<!-- HERO SECTION -->
+<!-- ========================================= -->
+
+    <section class="hero-section" id="home">
+
+        <!-- HERO CONTAINER -->
+
+        <div class="container hero-wrapper">
+
+            <!-- HERO CONTENT -->
+
+            <div class="hero-left">
+
+                <div class="availability-badge">
+                    ● Available for Projects
+                </div>
+
+                <h1>
+                    Governance-Aware GenAI Engineer building reliable AI systems for real-world deployment.
+                    
+                </h1>
+
+                <p class="hero-description">
+
+                    Specializing in GenAI engineering, AI governance, evaluation frameworks 
+                    and production-grade AI architectures 
+                    using AWS Bedrock, LangGraph and modern observability stacks.
+                
+                </p>
+                
+                <!-- LIVE AI DEMO CTA -->
+                
+                <div class="hero-demo-box">
+                
+                    <p class="hero-demo-text">
+                
+                        Explore a live governance-aware AI system built using
+                        AWS Bedrock, serverless architecture, observability pipelines
+                        and responsible AI guardrails.
+                
+                    </p>
+                
+                    <a href="YOUR_LIVE_DEMO_LINK"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="hero-demo-btn">
+                
+                        Try My Live AI Companion
+                
+                    </a>
+                
+                </div>
+
+</div>
+<!-- END HERO CONTENT -->                
+               
+ <!-- END HERO CONTAINER -->
+
+<!-- HERO VISUAL -->
+
+            <div class="hero-right">
+
+                <div class="circle-wrapper">
+
+                    <div class="floating-card card-top-left">
+                        <h4>RAG Systems</h4>
+                        <p>Retrieval Pipelines</p>
+                    </div>
+
+                    <div class="floating-card card-top-right">
+                        <h4>AI Governance</h4>
+                        <p>Security & Compliance</p>
+                    </div>
+
+                    <div class="floating-card card-left">
+                        <h4>AI Evaluation</h4>
+                        <p>RAGAS & DeepEval</p>
+                    </div>
+
+                    <div class="floating-card card-right">
+                        <h4>Agentic AI</h4>
+                        <p>LangGraph Workflows</p>
+                    </div>
+
+                    <div class="floating-card card-bottom">
+                        <h4>AWS Bedrock</h4>
+                        <p>Claude & Titan</p>
+                    </div>
+
+                    <!-- PROFILE IMAGE -->
+            <div class="profile-container">
+            
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+                    alt="Suganya Profile">
+            
+            </div>
+            <!-- END PROFILE CONTAINER -->
+        
+        </div>
+            <!-- END CIRCLE WRAPPER -->
+            
+        </div>
+            <!-- END HERO RIGHT -->
+            
+    </div>
+            <!-- END HERO WRAPPER -->
+            
+</section>
+            <!-- END HERO SECTION -->
+    
+
+<!-- ========================================= -->
+<!-- SERVICES SECTION -->
+<!-- ========================================= -->
+    
+
+    <section class="services-section" id="services">
+
+        <div class="container">
+    
+            <div class="section-header services-header">
+    
+                <div>
+                    <span class="section-tag">WHAT I OFFER</span>
+                    <h2 class="section-heading">Services I Provide</h2>
+                </div>
+    
+                
+    
+            </div>
+    
+            <div class="services-grid-new">    
+           
+                <!-- CARD 1 -->
+                
+                <div class="service-box purple">
+                
+                    <div class="service-icon-box">
+                        🧠
+                    </div>
+                
+                    <h3>GenAI & Agentic Systems</h3>
+                
+                    <ul>
+                        <li>RAG Pipelines</li>
+                        <li>LLM Integration</li>
+                        <li>Multi-Agent Systems</li>
+                        <li>Workflow Automation</li>
+                    </ul>
+                
+                </div>
+    
+                <!-- CARD 2 --> 
+          
+                  
+                <div class="service-box pink">
+    
+                    <div class="service-icon-box">
+                        🛡️
+                    </div>
+    
+                    <h3>AI Governance & Security</h3>
+    
+                    <ul>
+                        <li>Prompt Firewall</li>
+                        <li>Output Guardrails</li>
+                        <li>PII Protection</li>
+                        <li>Risk & Compliance</li>
+                    </ul>
+    
+                </div>
+    
+                <!-- CARD 3 -->
+    
+                <div class="service-box blue">
+    
+                    <div class="service-icon-box">
+                        📊
+                    </div>
+    
+                    <h3>Evaluation & Observability</h3>
+    
+                    <ul>
+                        <li>RAGAS Evaluation</li>
+                        <li>DeepEval Testing</li>
+                        <li>LangSmith Tracing</li>
+                        <li>Hallucination Detection</li>
+                    </ul>
+    
+                </div>
+    
+                <!-- CARD 4 -->
+    
+                <div class="service-box orange">
+    
+                    <div class="service-icon-box">
+                        ☁️
+                    </div>
+    
+                    <h3>Cloud & Deployment</h3>
+    
+                    <ul>
+                        <li>AWS Bedrock</li>
+                        <li>Docker & FastAPI</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Scalable Deployment</li>
+                    </ul>
+    
+                </div>
+    
+                <!-- CARD 5 -->
+    
+                <div class="service-box violet">
+                
+                    <div class="service-icon-box">
+                        🎓
+                    </div>
+                
+                    <h3>AI Training & Enablement</h3>
+                
+                    <ul>
+                        <li>Corporate AI Awareness Programs</li>
+                        <li>GenAI & RAG Workshops</li>
+                        <li>Responsible AI Training</li>
+                        <li>Technical Mentoring & Upskilling</li>
+                    </ul>
+                
+                </div> 
+    
+            </div>
+    
+        </div>
+
+    </section>
+
+<!-- ========================================= -->
+<!-- TECHNICAL SKILLS SECTION -->
+<!-- ========================================= -->
+
+<div class="tech-grid">
+
+        <!-- GENAI & AGENTIC SYSTEMS -->
+        
+        <div class="tech-card">
+        
+            <h4>🧠 GenAI & Agentic Systems</h4>
+        
+            <span>LangGraph</span>
+            <span>LangChain</span>
+            <span>RAG Workflows</span>
+            <span>Prompt Engineering</span>
+            <span>OpenAI APIs</span>
+            <span>AWS Bedrock</span>
+        
+        </div>
+        
+        <!-- RETRIEVAL & VECTOR SEARCH -->
+        
+        <div class="tech-card">
+        
+            <h4>🔍 Retrieval & Vector Search</h4>
+        
+            <span>FAISS</span>
+            <span>Semantic Retrieval</span>
+            <span>Vector Search</span>
+            <span>Sentence Transformers</span>
+            <span>Hugging Face</span>
+        
+        </div>
+        
+        <!-- BACKEND & INFRASTRUCTURE -->
+        
+        <div class="tech-card">
+        
+            <h4>💻 Backend & Infrastructure</h4>
+        
+            <span>Python</span>
+            <span>Flask</span>
+            <span>AWS Lambda</span>
+            <span>API Gateway</span>
+            <span>Docker</span>
+            <span>CloudWatch</span>
+            <span>Debugging</span>
+        
+        </div>
+        
+        <!-- EVALUATION & OBSERVABILITY -->
+        
+        <div class="tech-card">
+        
+            <h4>🔍 Evaluation & Observability</h4>
+        
+            <span>LangSmith</span>
+            <span>RAGAS</span>
+            <span>DeepEval</span>
+            <span>Structured Logging</span>
+            <span>Workflow Monitoring</span>
+            <span>AI Validation</span>
+            <span>Performance Monitoring</span>
+        
+        </div>
+        
+        <!-- AI GOVERNANCE & RELIABILITY -->
+        
+        <div class="tech-card">
+        
+            <h4>🛡️ AI Governance & Reliability</h4>
+        
+            <span>PII Masking</span>
+            <span>Prompt Firewall</span>
+            <span>Responsible AI</span>
+            <span>Validation Pipelines</span>
+            <span>Traceability</span>
+            <span>Routing Logic</span>
+        
+        </div>
+        
+        <!-- AI / ML FOUNDATIONS -->
+        
+        <div class="tech-card">
+        
+            <h4>📊 AI / ML Foundations</h4>
+        
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+        </div>
+
+
+</div>
+
+        
+
+<!-- ========================================= -->
+<!-- PROJECTS SECTION -->
+<!-- ========================================= -->
+
+    <section class="projects-section" id="projects">
+
+        <div class="container">
+
+            <div class="projects-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        FEATURED PROJECTS
+                    </span>
+
+                    <h2 class="section-heading">
+                        Selected Work
+                    </h2>
+
+                </div>
+
+                <a href="#" class="secondary-btn">
+                    View All
+                </a>
+
+            </div>
+
+            <div class="projects-grid">
+
+               <!-- PROJECT 1 -->
+            
+            <div class="project-card">
+            
+                <img src="{{ url_for('static', filename='images/project1.png') }}"
+                     alt="Agentic RAG Resume Intelligence">
+            
+                <div class="project-content">
+            
+                    <h3>Agentic RAG Resume Intelligence</h3>
+            
+                    <p>
+                        Built an agentic resume intelligence platform using LangGraph,
+                        RAG workflows and semantic retrieval to analyze resumes,
+                        generate explainable evaluations and provide structured
+                        candidate insights.
+                    </p>
+            
+                    <div class="project-tags">
+            
+                        <span>LangGraph</span>
+                        <span>RAG</span>
+                        <span>FAISS</span>
+                        <span>Agentic AI</span>
+            
+                    </div>
+            
+                    <div class="service-links">
+            
+                        <a href="https://github.com/suganyaGaurav/Agentic-RAG-Resume-Intelligence"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="github-btn">
+                            GitHub
+                        </a>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+                <!-- PROJECT 2 -->
+
+                <!-- PROJECT 1 -->
+                
+                <div class="project-card">
+                
+                    <img src="{{ url_for('static', filename='images/project1.png') }}"
+                         alt="Bro-Buddy GenAI System">
+                
+                    <div class="project-content">
+                
+                        <h3>Bro-Buddy GenAI Conversational System</h3>
+                
+                        <p>
+                            Designed and developed a governance-aware serverless GenAI conversational system
+                            using AWS Bedrock, Lambda, API Gateway and RAG-based orchestration with
+                            observability, guardrails and explainable AI workflows.
+                        </p>
+                
+                        <div class="project-tags">
+                
+                            <span>AWS Bedrock</span>
+                            <span>LangGraph</span>
+                            <span>RAG</span>
+                            <span>Serverless</span>
+                
+                        </div>
+                
+                        <div class="service-links">
+                
+                            <a href="https://github.com/suganyaGaurav/Bro-Buddy-Serverless-GenAI-Conversational-System-AWS-"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="github-btn">
+                                GitHub
+                            </a>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+               
+                <!-- PROJECT 3 -->
+
+                <div class="project-card">
+                
+                    <img src="{{ url_for('static', filename='images/project3.png') }}"
+                         alt="KittyLit Responsible AI Recommendation System">
+                
+                    <div class="project-content">
+                
+                        <h3>KittyLit - Responsible AI Recommendation System</h3>
+                
+                        <p>
+                            Developed a governance-first book recommendation platform using
+                            RAG, agent orchestration and semantic retrieval with explainable,
+                            child-safe recommendations, auditability and responsible AI guardrails.
+                        </p>
+                
+                        <div class="project-tags">
+                
+                            <span>RAG</span>
+                            <span>LangGraph</span>
+                            <span>FAISS</span>
+                            <span>Responsible AI</span>
+                
+                        </div>
+                
+                        <div class="service-links">
+                
+                            <a href="https://github.com/suganyaGaurav/KittyLit-A-Responsible-AI-Book-Recommendation-System-RAG-Agent-Architecture-"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="github-btn">
+                                GitHub
+                            </a>
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- GOVERNANCE SECTION -->
+
+                <!-- ========================================= -->
+<!-- GOVERNANCE & THOUGHT LEADERSHIP SECTION -->
+<!-- ========================================= -->
+
+<section class="governance-main-section" id="governance">
+
+    <!-- GOVERNANCE CONTAINER -->
+
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+
+        <div class="section-header">
+
+            <h2 class="section-heading">
+                Governance & Thought Leadership
+            </h2>
+
+        </div>
+
+        <!-- END SECTION HEADER -->
+
+        <!-- GOVERNANCE GRID -->
+    
+            <div class="governance-grid">
+    
+                <!-- ========================================= -->
+                <!-- S-RAIEF FRAMEWORK CARD -->
+                <!-- ========================================= -->
+    
+                <div class="governance-card">
+    
+                    <h3 class="credential-title">
+                        S-RAIEF Framework
+                    </h3>
+    
+                    <div class="raief-grid">
+    
+                        <div class="raief-card">
+                            <h3>S</h3>
+                            <h4>Secure</h4>
+                        </div>
+    
+                        <div class="raief-card">
+                            <h3>R</h3>
+                            <h4>Responsible</h4>
+                        </div>
+    
+                        <div class="raief-card">
+                            <h3>A</h3>
+                            <h4>Accountable</h4>
+                        </div>
+    
+                        <div class="raief-card">
+                            <h3>I</h3>
+                            <h4>Interpretable</h4>
+                        </div>
+    
+                        <div class="raief-card">
+                            <h3>E</h3>
+                            <h4>Ethical</h4>
+                        </div>
+    
+                        <div class="raief-card">
+                            <h3>F</h3>
+                            <h4>Fair</h4>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- END S-RAIEF FRAMEWORK CARD -->
+    
+                <!-- ========================================= -->
+                <!-- CERTIFICATIONS CARD -->
+                <!-- ========================================= -->
+    
+                <div class="governance-card">
+    
+                    <h3 class="credential-title">
+                        Certifications
+                    </h3>
+    
+                    <div class="credential-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/pgd_aiml_certificate.pdf') }}"
+                               target="_blank">
+                                📄 PGD in AI & ML
+                            </a>
+                        </h4>
+    
+                        <span>NIT Warangal</span>
+    
+                        <p>
+                            National Institute of Technology Warangal
+                        </p>
+    
+                    </div>
+    
+                    <div class="credential-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/ai_security_governance_certificate.pdf') }}"
+                               target="_blank">
+                                📄 AI Security & Governance
+                            </a>
+                        </h4>
+    
+                        <p>
+                            Securiti Responsible AI Certification
+                        </p>
+    
+                    </div>
+    
+                    <div class="credential-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/aws_bedrock_certificate.pdf') }}"
+                               target="_blank">
+                                📄 AWS Bedrock
+                            </a>
+                        </h4>
+    
+                        <p>
+                            Generative AI Applications
+                        </p>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- END CERTIFICATIONS CARD -->
+    
+                <!-- ========================================= -->
+                <!-- RESEARCH & PUBLICATIONS CARD -->
+                <!-- ========================================= -->
+    
+                <div class="governance-card">
+    
+                    <h3 class="credential-title">
+                        Research & Publications
+                    </h3>
+    
+                    <div class="paper-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/cost_of_unchecked_ai_governance.pdf') }}"
+                               target="_blank">
+                                📄 The Cost of Unchecked AI Governance
+                            </a>
+                        </h4>
+    
+                    </div>
+    
+                    <div class="paper-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/responsible_ai_adoption_framework.pdf') }}"
+                               target="_blank">
+                                📄 Responsible AI Adoption Framework
+                            </a>
+                        </h4>
+    
+                    </div>
+    
+                    <div class="paper-item">
+    
+                        <h4>
+                            <a href="{{ url_for('static', filename='pdfs/Choosing Python Automation vs. AI Agents.pdf') }}"
+                               target="_blank">
+                                📄 Choosing Python Automation vs AI Agents
+                            </a>
+                        </h4>
+    
+                    </div>
+    
+                </div>
+    
+                <!-- END RESEARCH & PUBLICATIONS CARD -->
+    
+            </div>
+    
+            <!-- END GOVERNANCE GRID -->
+    
+        </div>
+    
+        <!-- END GOVERNANCE CONTAINER -->
+    
+    </section>
+    
+    <!-- END GOVERNANCE & THOUGHT LEADERSHIP SECTION -->
+
+<!-- ========================================= -->
+<!-- CONTACT CTA SECTION -->
+<!-- ========================================= -->
+
+    <section class="footer-cta" id="contact">
+
+        <div class="container footer-wrapper">
+
+            <div class="footer-profile">
+
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}"
+                    alt="Suganya Profile">
+
+                <div>
+
+                    <h2>
+                        Let's build reliable, governed and production-ready AI solutions.
+                    </h2>
+
+                    <p>
+                        Open to freelance projects, consulting
+                        and full-time opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="footer-buttons">
+
+                <a href="https://www.linkedin.com/in/suganya-purushothaman-aiml/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                
+                <a href="https://github.com/suganyaGaurav" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="{{ url_for('static', filename='resume/Suganya_Resume.pdf') }}" target="_blank" rel="noopener noreferrer">
+                    Resume
+                </a>
+
+                <a href="mailto:sksugancool@gmail.com" target="_blank" rel="noopener noreferrer">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Suganya P. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
