@@ -1,822 +1,1010 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ==========================================================
+   Portfolio Website
+   Author  : Suganya P
+   Role    : Governance-Aware GenAI Engineer
 
-<head>
+   Sections
+   ----------------------------------------------------------
+   01. Design Tokens
+   02. Global Styles
+   03. Navigation
+   04. Hero Section
+   05. Services
+   06. Technical Skills
+   07. Projects
+   08. Governance & Thought Leadership
+   09. Contact CTA
+   10. Footer
+   11. Responsive Design
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   Last Updated : June 2026
+========================================================== */
 
-    <title>Suganya P | Governance-Aware GenAI Engineer</title>
+/* ========================================= */
+/* GLOBAL STYLES */
+/* ========================================= */
 
-    <!-- GOOGLE FONT -->
+/* ========================================= */
+/* DESIGN TOKENS */
+/* ========================================= */
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+:root{
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
+    --primary:#8b5cf6;
+
+    --text:#111827;
 
-    <!-- CSS -->
+    --body:#475569;
+
+    --border:#e5e7eb;
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    --purple:#f5f0ff;
+
+    --green:#eefdf3;
+
+    --pink:#fff1f6;
+
+    --blue:#eef4ff;
+
+    --orange:#fff7ed;
+
+    --violet:#f5f3ff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f9fc;
+    color: #111827;
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+/* ========================================= */
+/* GLOBAL CONTAINER */
+/* ========================================= */
+
+.container {
+    width: 92%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+/* ========================================= */
+/* GLOBAL SECTION SPACING */
+/* ========================================= */
+
+section {
+    padding: 65px 0;
+}
+
+/* ========================================= */
+/* SECTION SPACING OVERRIDES */
+/* ========================================= */
+
+.hero-section{
+    padding-bottom:40px;
+}
+
+.services-section{
+    padding-top:40px;
+    padding-bottom:50px;
+}
+
+.skills-section{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.projects-section{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.governance-main-section{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-tag {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.section-heading {
+    font-size: 38px;
+    margin-top: 10px;
+    color: #111827;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* ========================================= */
+/* NAVBAR */
+/* ========================================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(247,249,252,0.9);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #e5eaf3;
+}
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section h2 {
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.logo-section p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #374151;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
 
-</head>
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--primary);
+}
 
-<body>
+/* ========================================= */
+/* HERO SECTION */
+/* ========================================= */
 
- <!-- ========================================= -->
-<!-- NAVIGATION BAR -->
-<!-- ========================================= -->
-    
-    <header class="navbar">
-
-        <div class="container navbar-inner">
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
-            <div class="logo-section">
+.hero-left {
+    width: 52%;
+}
+
+.availability-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #e8fff0;
+    color: #15803d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    color: #111827;
+}
+
+.hero-left h1 span {
+    background: linear-gradient(90deg, #7c3aed, #d946ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin-bottom: 18px;
+}
+
+
+/* ========================================= */
+/* HERO LIVE DEMO CTA */
+/* ========================================= */
 
-                <h2>Suganya P</h2>
+.hero-demo-box{
 
-                <p>Governance-Aware GenAI Engineer</p>
+    margin-top:12px;
 
-            </div>
+    display:flex;
 
-            <nav>
+    flex-direction:column;
 
-                <ul class="nav-links">
+    gap:14px;
+}
 
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#governance">Governance</a></li>
-                    <li><a href="#contact">Contact</a></li>
+.hero-demo-text{
 
-                </ul>
+    font-size:15px;
 
-            </nav>
+    max-width:600px;
 
-        </div>
+    color:#475569;
 
-    </header>
-
-<!-- ========================================= -->
-<!-- HERO SECTION -->
-<!-- ========================================= -->
-
-    <section class="hero-section" id="home">
-
-        <!-- HERO CONTAINER -->
-
-        <div class="container hero-wrapper">
-
-            <!-- HERO CONTENT -->
-
-            <div class="hero-left">
-
-                <div class="availability-badge">
-                    ● Available for Projects
-                </div>
-
-                <h1>
-                    Governance-Aware GenAI Engineer building reliable AI systems for real-world deployment.
-                    
-                </h1>
-
-                <p class="hero-description">
-
-                    Specializing in GenAI engineering, AI governance, evaluation frameworks 
-                    and production-grade AI architectures 
-                    using AWS Bedrock, LangGraph and modern observability stacks.
-                
-                </p>
-                
-                <!-- LIVE AI DEMO CTA -->
-                
-                <div class="hero-demo-box">
-                
-                    <p class="hero-demo-text">
-                
-                        Explore a live governance-aware AI system built using
-                        AWS Bedrock, serverless architecture, observability pipelines
-                        and responsible AI guardrails.
-                
-                    </p>
-                
-                    <a href="YOUR_LIVE_DEMO_LINK"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="hero-demo-btn">
-                
-                        Try My Live AI Companion
-                
-                    </a>
-                
-                </div>
-
-</div>
-<!-- END HERO CONTENT -->                
-               
- <!-- END HERO CONTAINER -->
-
-<!-- HERO VISUAL -->
-
-            <div class="hero-right">
-
-                <div class="circle-wrapper">
-
-                    <div class="floating-card card-top-left">
-                        <h4>RAG Systems</h4>
-                        <p>Retrieval Pipelines</p>
-                    </div>
-
-                    <div class="floating-card card-top-right">
-                        <h4>AI Governance</h4>
-                        <p>Security & Compliance</p>
-                    </div>
-
-                    <div class="floating-card card-left">
-                        <h4>AI Evaluation</h4>
-                        <p>RAGAS & DeepEval</p>
-                    </div>
-
-                    <div class="floating-card card-right">
-                        <h4>Agentic AI</h4>
-                        <p>LangGraph Workflows</p>
-                    </div>
-
-                    <div class="floating-card card-bottom">
-                        <h4>AWS Bedrock</h4>
-                        <p>Claude & Titan</p>
-                    </div>
-
-                    <!-- PROFILE IMAGE -->
-            <div class="profile-container">
-            
-                <img src="{{ url_for('static', filename='images/profile.jpg') }}"
-                    alt="Suganya Profile">
-            
-            </div>
-            <!-- END PROFILE CONTAINER -->
-        
-        </div>
-            <!-- END CIRCLE WRAPPER -->
-            
-        </div>
-            <!-- END HERO RIGHT -->
-            
-    </div>
-            <!-- END HERO WRAPPER -->
-            
-</section>
-            <!-- END HERO SECTION -->
-    
+    line-height:1.7;
+}
 
-<!-- ========================================= -->
-<!-- SERVICES SECTION -->
-<!-- ========================================= -->
-    
+.hero-demo-btn{
 
-    <section class="services-section" id="services">
+    display:inline-block;
 
-        <div class="container">
-    
-            <div class="section-header services-header">
-    
-                <div>
-                    <span class="section-tag">WHAT I OFFER</span>
-                    <h2 class="section-heading">Services I Provide</h2>
-                </div>
-    
-                
-    
-            </div>
-    
-            <div class="services-grid-new">    
-           
-                <!-- CARD 1 -->
-                
-                <div class="service-box purple">
-                
-                    <div class="service-icon-box">
-                        🧠
-                    </div>
-                
-                    <h3>GenAI & Agentic Systems</h3>
-                
-                    <ul>
-                        <li>RAG Pipelines</li>
-                        <li>LLM Integration</li>
-                        <li>Multi-Agent Systems</li>
-                        <li>Workflow Automation</li>
-                    </ul>
-                
-                </div>
-    
-                <!-- CARD 2 --> 
-          
-                  
-                <div class="service-box pink">
-    
-                    <div class="service-icon-box">
-                        🛡️
-                    </div>
-    
-                    <h3>AI Governance & Security</h3>
-    
-                    <ul>
-                        <li>Prompt Firewall</li>
-                        <li>Output Guardrails</li>
-                        <li>PII Protection</li>
-                        <li>Risk & Compliance</li>
-                    </ul>
-    
-                </div>
-    
-                <!-- CARD 3 -->
-    
-                <div class="service-box blue">
-    
-                    <div class="service-icon-box">
-                        📊
-                    </div>
-    
-                    <h3>Evaluation & Observability</h3>
-    
-                    <ul>
-                        <li>RAGAS Evaluation</li>
-                        <li>DeepEval Testing</li>
-                        <li>LangSmith Tracing</li>
-                        <li>Hallucination Detection</li>
-                    </ul>
-    
-                </div>
-    
-                <!-- CARD 4 -->
-    
-                <div class="service-box orange">
-    
-                    <div class="service-icon-box">
-                        ☁️
-                    </div>
-    
-                    <h3>Cloud & Deployment</h3>
-    
-                    <ul>
-                        <li>AWS Bedrock</li>
-                        <li>Docker & FastAPI</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Scalable Deployment</li>
-                    </ul>
-    
-                </div>
-    
-                <!-- CARD 5 -->
-    
-                <div class="service-box violet">
-                
-                    <div class="service-icon-box">
-                        🎓
-                    </div>
-                
-                    <h3>AI Training & Enablement</h3>
-                
-                    <ul>
-                        <li>Corporate AI Awareness Programs</li>
-                        <li>GenAI & RAG Workshops</li>
-                        <li>Responsible AI Training</li>
-                        <li>Technical Mentoring & Upskilling</li>
-                    </ul>
-                
-                </div> 
-    
-            </div>
-    
-        </div>
-
-    </section>
-
-<!-- ========================================= -->
-<!-- TECHNICAL SKILLS SECTION -->
-<!-- ========================================= -->
-
-<div class="tech-grid">
-
-        <!-- GENAI & AGENTIC SYSTEMS -->
-        
-        <div class="tech-card">
-        
-            <h4>🧠 GenAI & Agentic Systems</h4>
-        
-            <span>LangGraph</span>
-            <span>LangChain</span>
-            <span>RAG Workflows</span>
-            <span>Prompt Engineering</span>
-            <span>OpenAI APIs</span>
-            <span>AWS Bedrock</span>
-        
-        </div>
-        
-        <!-- RETRIEVAL & VECTOR SEARCH -->
-        
-        <div class="tech-card">
-        
-            <h4>🔍 Retrieval & Vector Search</h4>
-        
-            <span>FAISS</span>
-            <span>Semantic Retrieval</span>
-            <span>Vector Search</span>
-            <span>Sentence Transformers</span>
-            <span>Hugging Face</span>
-        
-        </div>
-        
-        <!-- BACKEND & INFRASTRUCTURE -->
-        
-        <div class="tech-card">
-        
-            <h4>💻 Backend & Infrastructure</h4>
-        
-            <span>Python</span>
-            <span>Flask</span>
-            <span>AWS Lambda</span>
-            <span>API Gateway</span>
-            <span>Docker</span>
-            <span>CloudWatch</span>
-            <span>Debugging</span>
-        
-        </div>
-        
-        <!-- EVALUATION & OBSERVABILITY -->
-        
-        <div class="tech-card">
-        
-            <h4>🔍 Evaluation & Observability</h4>
-        
-            <span>LangSmith</span>
-            <span>RAGAS</span>
-            <span>DeepEval</span>
-            <span>Structured Logging</span>
-            <span>Workflow Monitoring</span>
-            <span>AI Validation</span>
-            <span>Performance Monitoring</span>
-        
-        </div>
-        
-        <!-- AI GOVERNANCE & RELIABILITY -->
-        
-        <div class="tech-card">
-        
-            <h4>🛡️ AI Governance & Reliability</h4>
-        
-            <span>PII Masking</span>
-            <span>Prompt Firewall</span>
-            <span>Responsible AI</span>
-            <span>Validation Pipelines</span>
-            <span>Traceability</span>
-            <span>Routing Logic</span>
-        
-        </div>
-        
-        <!-- AI / ML FOUNDATIONS -->
-        
-        <div class="tech-card">
-        
-            <h4>📊 AI / ML Foundations</h4>
-        
-            <span>PyTorch</span>
-            <span>TensorFlow</span>
-            <span>Scikit-learn</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-        </div>
-
-
-</div>
-
-        
-
-<!-- ========================================= -->
-<!-- PROJECTS SECTION -->
-<!-- ========================================= -->
-
-    <section class="projects-section" id="projects">
-
-        <div class="container">
-
-            <div class="projects-header">
-
-                <div>
-
-                    <span class="section-tag">
-                        FEATURED PROJECTS
-                    </span>
-
-                    <h2 class="section-heading">
-                        Selected Work
-                    </h2>
-
-                </div>
-
-                <a href="#" class="secondary-btn">
-                    View All
-                </a>
-
-            </div>
-
-            <div class="projects-grid">
-
-               <!-- PROJECT 1 -->
-            
-            <div class="project-card">
-            
-                <img src="{{ url_for('static', filename='images/project1.png') }}"
-                     alt="Agentic RAG Resume Intelligence">
-            
-                <div class="project-content">
-            
-                    <h3>Agentic RAG Resume Intelligence</h3>
-            
-                    <p>
-                        Built an agentic resume intelligence platform using LangGraph,
-                        RAG workflows and semantic retrieval to analyze resumes,
-                        generate explainable evaluations and provide structured
-                        candidate insights.
-                    </p>
-            
-                    <div class="project-tags">
-            
-                        <span>LangGraph</span>
-                        <span>RAG</span>
-                        <span>FAISS</span>
-                        <span>Agentic AI</span>
-            
-                    </div>
-            
-                    <div class="service-links">
-            
-                        <a href="https://github.com/suganyaGaurav/Agentic-RAG-Resume-Intelligence"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="github-btn">
-                            GitHub
-                        </a>
-            
-                    </div>
-            
-                </div>
-            
-            </div>
-                <!-- PROJECT 2 -->
-
-                <!-- PROJECT 1 -->
-                
-                <div class="project-card">
-                
-                    <img src="{{ url_for('static', filename='images/project1.png') }}"
-                         alt="Bro-Buddy GenAI System">
-                
-                    <div class="project-content">
-                
-                        <h3>Bro-Buddy GenAI Conversational System</h3>
-                
-                        <p>
-                            Designed and developed a governance-aware serverless GenAI conversational system
-                            using AWS Bedrock, Lambda, API Gateway and RAG-based orchestration with
-                            observability, guardrails and explainable AI workflows.
-                        </p>
-                
-                        <div class="project-tags">
-                
-                            <span>AWS Bedrock</span>
-                            <span>LangGraph</span>
-                            <span>RAG</span>
-                            <span>Serverless</span>
-                
-                        </div>
-                
-                        <div class="service-links">
-                
-                            <a href="https://github.com/suganyaGaurav/Bro-Buddy-Serverless-GenAI-Conversational-System-AWS-"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="github-btn">
-                                GitHub
-                            </a>
-                
-                        </div>
-                
-                    </div>
-                
-                </div>
-
-               
-                <!-- PROJECT 3 -->
-
-                <div class="project-card">
-                
-                    <img src="{{ url_for('static', filename='images/project3.png') }}"
-                         alt="KittyLit Responsible AI Recommendation System">
-                
-                    <div class="project-content">
-                
-                        <h3>KittyLit - Responsible AI Recommendation System</h3>
-                
-                        <p>
-                            Developed a governance-first book recommendation platform using
-                            RAG, agent orchestration and semantic retrieval with explainable,
-                            child-safe recommendations, auditability and responsible AI guardrails.
-                        </p>
-                
-                        <div class="project-tags">
-                
-                            <span>RAG</span>
-                            <span>LangGraph</span>
-                            <span>FAISS</span>
-                            <span>Responsible AI</span>
-                
-                        </div>
-                
-                        <div class="service-links">
-                
-                            <a href="https://github.com/suganyaGaurav/KittyLit-A-Responsible-AI-Book-Recommendation-System-RAG-Agent-Architecture-"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="github-btn">
-                                GitHub
-                            </a>
-                
-                        </div>
-                
-                    </div>
-                
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-<!-- GOVERNANCE SECTION -->
-
-                <!-- ========================================= -->
-<!-- GOVERNANCE & THOUGHT LEADERSHIP SECTION -->
-<!-- ========================================= -->
-
-<section class="governance-main-section" id="governance">
-
-    <!-- GOVERNANCE CONTAINER -->
-
-    <div class="container">
-
-        <!-- SECTION HEADER -->
-
-        <div class="section-header">
-
-            <h2 class="section-heading">
-                Governance & Thought Leadership
-            </h2>
-
-        </div>
-
-        <!-- END SECTION HEADER -->
-
-        <!-- GOVERNANCE GRID -->
-    
-            <div class="governance-grid">
-    
-                <!-- ========================================= -->
-                <!-- S-RAIEF FRAMEWORK CARD -->
-                <!-- ========================================= -->
-    
-                <div class="governance-card">
-    
-                    <h3 class="credential-title">
-                        S-RAIEF Framework
-                    </h3>
-    
-                    <div class="raief-grid">
-    
-                        <div class="raief-card">
-                            <h3>S</h3>
-                            <h4>Secure</h4>
-                        </div>
-    
-                        <div class="raief-card">
-                            <h3>R</h3>
-                            <h4>Responsible</h4>
-                        </div>
-    
-                        <div class="raief-card">
-                            <h3>A</h3>
-                            <h4>Accountable</h4>
-                        </div>
-    
-                        <div class="raief-card">
-                            <h3>I</h3>
-                            <h4>Interpretable</h4>
-                        </div>
-    
-                        <div class="raief-card">
-                            <h3>E</h3>
-                            <h4>Ethical</h4>
-                        </div>
-    
-                        <div class="raief-card">
-                            <h3>F</h3>
-                            <h4>Fair</h4>
-                        </div>
-    
-                    </div>
-    
-                </div>
-    
-                <!-- END S-RAIEF FRAMEWORK CARD -->
-    
-                <!-- ========================================= -->
-                <!-- CERTIFICATIONS CARD -->
-                <!-- ========================================= -->
-    
-                <div class="governance-card">
-    
-                    <h3 class="credential-title">
-                        Certifications
-                    </h3>
-    
-                    <div class="credential-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/pgd_aiml_certificate.pdf') }}"
-                               target="_blank">
-                                📄 PGD in AI & ML
-                            </a>
-                        </h4>
-    
-                        <span>NIT Warangal</span>
-    
-                        <p>
-                            National Institute of Technology Warangal
-                        </p>
-    
-                    </div>
-    
-                    <div class="credential-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/ai_security_governance_certificate.pdf') }}"
-                               target="_blank">
-                                📄 AI Security & Governance
-                            </a>
-                        </h4>
-    
-                        <p>
-                            Securiti Responsible AI Certification
-                        </p>
-    
-                    </div>
-    
-                    <div class="credential-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/aws_bedrock_certificate.pdf') }}"
-                               target="_blank">
-                                📄 AWS Bedrock
-                            </a>
-                        </h4>
-    
-                        <p>
-                            Generative AI Applications
-                        </p>
-    
-                    </div>
-    
-                </div>
-    
-                <!-- END CERTIFICATIONS CARD -->
-    
-                <!-- ========================================= -->
-                <!-- RESEARCH & PUBLICATIONS CARD -->
-                <!-- ========================================= -->
-    
-                <div class="governance-card">
-    
-                    <h3 class="credential-title">
-                        Research & Publications
-                    </h3>
-    
-                    <div class="paper-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/cost_of_unchecked_ai_governance.pdf') }}"
-                               target="_blank">
-                                📄 The Cost of Unchecked AI Governance
-                            </a>
-                        </h4>
-    
-                    </div>
-    
-                    <div class="paper-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/responsible_ai_adoption_framework.pdf') }}"
-                               target="_blank">
-                                📄 Responsible AI Adoption Framework
-                            </a>
-                        </h4>
-    
-                    </div>
-    
-                    <div class="paper-item">
-    
-                        <h4>
-                            <a href="{{ url_for('static', filename='pdfs/Choosing Python Automation vs. AI Agents.pdf') }}"
-                               target="_blank">
-                                📄 Choosing Python Automation vs AI Agents
-                            </a>
-                        </h4>
-    
-                    </div>
-    
-                </div>
-    
-                <!-- END RESEARCH & PUBLICATIONS CARD -->
-    
-            </div>
-    
-            <!-- END GOVERNANCE GRID -->
-    
-        </div>
-    
-        <!-- END GOVERNANCE CONTAINER -->
-    
-    </section>
-    
-    <!-- END GOVERNANCE & THOUGHT LEADERSHIP SECTION -->
+    width:fit-content;
 
-<!-- ========================================= -->
-<!-- CONTACT CTA SECTION -->
-<!-- ========================================= -->
+    padding:14px 22px;
 
-    <section class="footer-cta" id="contact">
+    background:#8b5cf6;
 
-        <div class="container footer-wrapper">
+    color:#ffffff;
+
+    border-radius:12px;
 
-            <div class="footer-profile">
+    font-weight:600;
+
+    transition:all .3s ease;
+}
 
-                <img src="{{ url_for('static', filename='images/profile.jpg') }}"
-                    alt="Suganya Profile">
+.hero-demo-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(139,92,246,.25);
+}
+
+
+/* ========================================= */
+/* HERO RIGHT */
+/* ========================================= */
+
+.hero-right {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
 
-                <div>
+.circle-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px dashed #d8c8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-                    <h2>
-                        Let's build reliable, governed and production-ready AI solutions.
-                    </h2>
+.profile-container {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 12px solid #f3e8ff;
+    background: white;
+}
+
+.profile-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================================= */
+/* FLOATING CARDS */
+/* ========================================= */
+
+.floating-card {
+
+    position: absolute;
+
+    width: 190px;
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf3;
+
+    box-shadow: 0 8px 20px rgba(15,23,42,0.06);
+}
+
+.floating-card h4 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.floating-card p {
+    font-size: 13px;
+}
+
+.card-top-left {
+    top: 10px;
+    left: -10px;
+}
+
+.card-top-right {
+    top: 20px;
+    right: -10px;
+}
+
+.card-left {
+    top: 42%;
+    left: -40px;
+}
+
+.card-right {
+    top: 42%;
+    right: -40px;
+}
+
+.card-bottom {
+    bottom: -10px;
+}
+
+.services-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.services-intro{
+    max-width:420px;
+    font-size:15px;
+}
+
+/* ========================================= */
+/* SERVICES GRID */
+/* ========================================= */
+
+.services-grid-new{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+}
+
+.service-box{
+    border-radius:18px;
+    padding:24px;
+    border:1px solid #e5e7eb;
+}
+
+.service-box h3{
+    font-size:18px;
+    margin:16px 0;
+    line-height:1.4;
+}
+
+.service-box ul{
+    padding-left:18px;
+}
+
+.service-box li{
+    font-size:14px;
+    margin-bottom:8px;
+    color:#475569;
+}
+
+.service-icon-box{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    background:white;
+}
+
+.purple{background:#f5f0ff;}
+.green{background:#eefdf3;}
+.pink{background:#fff1f6;}
+.blue{background:#eef4ff;}
+.orange{background:#fff7ed;}
+.violet{background:#f5f3ff;}
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
+}
+
+/* ========================================= */
+/* TECH CARD BASE */
+/* ========================================= */
+
+.tech-card{
+    
+    border:1px solid #e5e7eb;
+    
+    border-radius:18px;
+    
+    padding:20px;
+    
+    transition:all .3s ease;
+
+    min-height:220px;
+}
+
+/* ========================================= */
+/* TECH CARD COLORS */
+/* ========================================= */
 
-                    <p>
-                        Open to freelance projects, consulting
-                        and full-time opportunities.
-                    </p>
+.tech-card:nth-child(1){
+    background:#f5f0ff;
+}
 
-                </div>
+.tech-card:nth-child(2){
+    background:#eefdf3;
+}
 
-            </div>
+.tech-card:nth-child(3){
+    background:#fff1f6;
+}
 
-            <div class="footer-buttons">
+.tech-card:nth-child(4){
+    background:#eef4ff;
+}
 
-                <a href="https://www.linkedin.com/in/suganya-purushothaman-aiml/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-                
-                <a href="https://github.com/suganyaGaurav" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
+.tech-card:nth-child(5){
+    background:#fff7ed;
+}
 
-                <a href="{{ url_for('static', filename='resume/Suganya_Resume.pdf') }}" target="_blank" rel="noopener noreferrer">
-                    Resume
-                </a>
+.tech-card:nth-child(6){
+    background:#f5f3ff;
+}
 
-                <a href="mailto:sksugancool@gmail.com" target="_blank" rel="noopener noreferrer">
-                    Email
-                </a>
+.tech-card h4{
+    font-size:16px;
+    margin-bottom:14px;
+    min-height:44px;
+}
+
+.tech-card span{
+    display:inline-block;
+    padding:6px 10px;
+    margin:3px;
+    border-radius:999px;
+    background:#f3f4f6;
+    font-size:12px;
+    font-weight:500;
+}
 
-            </div>
+/* ========================================= */
+/* TECH CARD HOVER */
+/* ========================================= */
 
-        </div>
+.tech-card:hover{
 
-    </section>
+    transform:translateY(-4px);
 
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
+    box-shadow:
+        0 10px 24px rgba(15,23,42,0.08);
+}
 
-    <footer class="footer">
+@media(max-width:768px){
 
-        <p>
-            © 2026 Suganya P. All rights reserved.
-        </p>
+.services-header{
+flex-direction:column;
+}
 
-    </footer>
+.services-grid-new,
+.tech-grid{
+grid-template-columns:1fr;
+}
 
-</body>
+}
+/* ========================================= */
+/* PROJECTS SECTION */
+/* ========================================= */
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
 
-</html>
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5eaf3;
+
+    box-shadow:
+        0 4px 12px rgba(15,23,42,0.04);
+
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 24px rgba(15,23,42,0.08);
+}
+
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-content h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.project-content p {
+    margin-bottom: 22px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.project-tags span {
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.70);
+    
+    border: 1px solid rgba(139,92,246,0.12);
+    
+    font-size: 13px;
+
+    font-weight: 600;
+}.governance-main-section {
+    background: transparent;
+}
+.service-links {
+    display: flex;
+    gap: 12px;
+}
+
+.github-btn,
+.demo-btn {
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.github-btn {
+    background: #111827;
+    color: white;
+}
+
+.demo-btn {
+    background: #8b5cf6;
+    color: white;
+}
+
+/* ========================================= */
+/* GOVERNANCE SECTION */
+/* ========================================= */
+
+.governance-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    align-items:start;
+}
+
+.governance-card{
+    background:#ffffff;
+    border:1px solid #e5eaf3;
+    border-radius:18px;
+    padding:28px;
+    height:100%;
+    transition:all .3s ease;
+}
+
+.governance-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 24px rgba(15,23,42,0.08);
+}
+
+.raief-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-top:20px;
+}
+
+.raief-card {
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #e5eaf3;
+    transition: all 0.3s ease;
+    min-height: 130px;
+}
+.raief-card:nth-child(1) {
+    background: #f7f4ff;
+}
+
+.raief-card:nth-child(2) {
+    background: #eef4ff;
+}
+
+.raief-card:nth-child(3) {
+    background: #fff8ea;
+}
+
+.raief-card:nth-child(4) {
+    background: #eefbf4;
+}
+
+.raief-card:nth-child(5) {
+    background: #fff4f7;
+}
+
+.raief-card:nth-child(6) {
+    background: #f4f6ff;
+}
+.raief-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15,23,42,0.08);
+}
+
+.credential-item:hover {
+    padding-left: 6px;
+    transition: all 0.2s ease;
+}
+
+.paper-item:hover{
+
+    padding-left:6px;
+
+    transition:all .2s ease;
+}
+
+.raief-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+}
+.raief-card h3 {
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(124,58,237,0.12);
+
+    color: #7c3aed;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.raief-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+
+
+.credential-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #111827;
+}
+
+.credential-item,
+.paper-item {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 0;
+    padding: 18px 0;
+}
+
+.credential-item h4,
+.paper-item p {
+    color: #111827;
+}
+
+.credential-item a,
+.paper-item a{
+    color:#111827;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.credential-item a:hover,
+.paper-item a:hover{
+    color:#8b5cf6;
+}
+
+/* ========================================= */
+/* FOOTER CTA */
+/* ========================================= */
+
+.footer-cta {
+    padding-top: 0;
+}
+
+.footer-wrapper {
+
+    background: #f3f7ff;
+
+    border: 1px solid #dce7f8;
+
+    border-radius: 24px;
+
+    padding: 32px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+.footer-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-profile h2 {
+    font-size: 30px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+/* ========================================= */
+/* FOOTER BUTTON HOVER */
+/* ========================================= */
+.footer-buttons a {
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .2s ease;
+}
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+.footer {
+    padding: 24px 0 40px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+
+@media (max-width: 992px) {
+
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 48px;
+    }
+
+    .circle-wrapper {
+        width: 420px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .navbar-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid,
+    .skills-grid,
+    .projects-grid,
+    .raief-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-profile {
+        flex-direction: column;
+    }
+
+    .footer-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .circle-wrapper {
+        width: 340px;
+        height: 340px;
+    }
+
+    .floating-card {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+    font-size: 38px;
+    margin-top: 10px;
+    color: #111827;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+    .hero-left h1 {
+        font-size: 34px;
+    }
+
+    .profile-container {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media(max-width:992px){
+
+    .services-grid-new{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .tech-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+
+/* ==========================================================
+   END OF STYLESHEET
+========================================================== */
